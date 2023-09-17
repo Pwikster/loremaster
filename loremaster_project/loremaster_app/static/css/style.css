@@ -13,6 +13,7 @@
     align-items: center;
     background-color: #333;
     padding: 1rem 2rem;
+    border-bottom: 2px solid purple ;
     
 }
 
@@ -73,12 +74,14 @@
 
 }
 
-.title-text-left {
+.title-text-left, .title-text-right {
     color: white;
     font-size: xx-large;
     border-radius: 4px;
     padding: 3.5rem 1.5rem;
     margin: 2px;
+    height: 200px;
+    width: 400px;
 
     background-color: #333;
     box-shadow: 2px 2px 0px purple;
@@ -87,20 +90,37 @@
 
 }
 
+
 .title-text-right {
+    box-shadow: -2px 2px 0px purple;
+}
+
+.title-text-right:hover, .title-text-left:hover {
+    scale: 1.01;
+}
+
+.main-content-button {
+
     color: white;
-    text-align: right;
     font-size: xx-large;
     border-radius: 4px;
     padding: 3.5rem 1.5rem;
     margin: 2px;
 
+    background-color: purple;
+    box-shadow: 2px 2px 0px #333;
+
+    display: flex;
+
+
+}
+
+.main-content-button:hover {
+    cursor: pointer;
+    scale: 1.1;
+
     background-color: #333;
     box-shadow: -2px 2px 0px purple;
 
-}
 
-.title-image {
-    height: inherit;
 }
-
