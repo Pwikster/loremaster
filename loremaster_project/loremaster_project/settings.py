@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #added
-    'loremaster_app',
+    'loremaster_app', #NEW
+    'accounts', #NEW
     #default
     'django.contrib.admin',
     'django.contrib.auth',
@@ -128,3 +129,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# send default user model to custom user model instead
+AUTH_USER_MODEL = "accounts.CustomUser" #NEW
