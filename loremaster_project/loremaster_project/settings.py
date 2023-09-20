@@ -58,7 +58,7 @@ ROOT_URLCONF = 'loremaster_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"], #NEW BASE_DIR / "templates"
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,3 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # send default user model to custom user model instead
 AUTH_USER_MODEL = "accounts.CustomUser" #NEW
+
+# defaults redirect after login/logout back to home.html
+LOGIN_REDIRECT_URL = "home" #NEW
+LOGOUT_REDIRECT_URL = "home" #NEW
