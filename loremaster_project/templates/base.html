@@ -15,7 +15,7 @@ base.html is the file that stores the basic building block of the website which 
 
 <body>
     <nav class="navbar">
-        <a href="#" class="nav-logo">Lore Master</a>
+        <a href="{% url 'home' %}" class="nav-logo">Lore Master</a>
         <ul class="nav-list">
             <!--LOG IN LOG OUT LOGIC-->
             {% if user.is_authenticated %}

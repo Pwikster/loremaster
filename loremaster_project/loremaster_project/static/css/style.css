@@ -4,6 +4,11 @@
     font-family: Arial, sans-serif;
 }
 
+/* GENERAL STYLING */
+body {
+    background-color: #333;
+}
+
 /* NAVBAR STYLING*/
 
 
@@ -13,8 +18,8 @@
     align-items: center;
     background-color: #333;
     padding: 1rem 2rem;
-    border-bottom: 2px solid purple ;
-    
+    border-bottom: 2px solid purple;
+
 }
 
 .nav-logo {
@@ -62,6 +67,62 @@
     }
 }
 
+/* FORM STYLING SIGNUP LOGIN*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    max-width: 500px;
+    margin: 50px auto;
+
+    color: white;
+    background-color: #222;
+    border-radius: 8px;
+
+    box-shadow: 2px 2px 0px purple;
+}
+
+form p {
+    padding: 8px 4px;
+}
+
+form input {
+    padding: 8px;
+    margin: 16px 0px 16px 0px;
+}
+
+form button {
+    margin: 16px;
+
+    text-decoration: none;
+    color: white;
+    padding: 1.0rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    background-color: #333;
+    transition: background-color 0.3s;
+
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+form ul {
+    padding: 8px 4px;
+    list-style-type: none;
+}
+
 /* MAIN-CONTENT STYLING (BODY OF MAIN PAGE)*/
 
 .main-content-block {
@@ -69,12 +130,13 @@
     flex-direction: row;
     background-color: #222;
     height: 500px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
 }
 
-.title-text-left, .title-text-right {
+.title-text-left,
+.title-text-right {
     color: white;
     font-size: xx-large;
     border-radius: 4px;
@@ -95,7 +157,8 @@
     box-shadow: -2px 2px 0px purple;
 }
 
-.title-text-right:hover, .title-text-left:hover {
+.title-text-right:hover,
+.title-text-left:hover {
     scale: 1.01;
 }
 
